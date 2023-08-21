@@ -1,0 +1,79 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: inherit ;
+}
+
+body{
+background: #eee;
+font-family: sans-serif;
+padding: 20px;
+}
+
+.container{
+    max-width: 1000px;
+    height: fit-content;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    background-image: linear-gradient(90deg,#9273c3, #5674b6);
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    background: #8590c8 ;
+    opacity: 0.8;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    line-height: 2;
+    
+}
+.list{
+list-style: none;
+}
+.list ul li{
+border-bottom: 2px solid black;
+padding: 10px;
+}
+.list ul li:last-child{
+border-bottom: 0;
+}
+/* neišlenda būkšniai-borderiai tarp eilučių. kodėl? */
+
+.link{
+    width: 90%;
+    height: 45px;
+    background: #fffd38;
+    text-align: center;
+    /* padding: 8px; */
+     line-height: 45px;
+     border-radius: 4px;
+
+}
+.box h1{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.price{
+    font-size: 3em;
+    font-family:serif;    
+}
+
+@media (max-width: 768px)
+{
+    .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+    .box {
+width: auto;
+margin: auto;
+    }
+}
